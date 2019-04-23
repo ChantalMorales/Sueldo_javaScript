@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sueldo_javascript</title>
+
+</head>
+<body>
+
+    <script>
+    //AQUI VA TODO EL CÓDIGO
+    let sueldo,HorTra,ValHor;
+    let totalHor=0;
+    ValHor=parseFloat(prompt("ingrese el valor a pagar por hora: "));
+    for(var i = 1; i <= 5; i++)
+{
+    
+    HorTra=parseFloat(prompt("ingrese el numero de horas trabajadas en el día ", i,":"));
+    totalHor=totalHor+HorTra;
+}
+   sueldo=totalHor*ValHor; 
+    alert(`El valor total del sueldo es :  ${sueldo}`);
+    document.write(`El valor total del sueldo es :  ${sueldo}`);
+    console.log(`El valor total del sueldo es :  ${sueldo}`);
+    </script>
+</body>
+
+
+</html>
